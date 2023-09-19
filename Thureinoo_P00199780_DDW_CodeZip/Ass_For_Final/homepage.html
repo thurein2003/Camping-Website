@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <title>Home</title>
+    <link rel="icon" href="./Images/logo.png" type="image/icon">
+    <script src="./javascript/style.js" ></script>
+    <script src="./javascript/jquery.ihavecookies.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+   <header>
+    <nav>
+      <div class="container">
+        <div class="title">
+          <!-- Add the logo or company name here if desired -->
+          <div class="name">
+            <h1>Retail Camping Company (RCC)</h1>
+          </div>
+        </div>
+  
+        <!-- Add the bar icon for mobile and tablet views -->
+        <div class="nav-item mobile-bar" id="navToggle">
+          <a onclick="toggleNavList()">      
+              <em class="fa-solid fa-bars fa-bounce"></em>
+          </a>
+        </div>
+  
+        <!-- Add the navigation items for laptop view -->
+        <div class="items laptop-view nav-list" id="navList">
+          <div class="nav-item">
+            <a href="./homepage.html">
+              <em class="fa-solid fa-house fa-bounce"></em>
+              <span class="nav-title">Home</span>
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="campingEquipment.html">
+              <em class="fa-solid fa-van-shuttle fa-bounce"></em>
+              <span class="nav-title">Camping Equipment</span>
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="./furniture.html">
+              <em class="fa-solid fa-shop fa-bounce"></em>
+              <span class="nav-title">Furniture</span>
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="./offeranddetail.html">
+              <em class="fa-solid fa-box fa-bounce"></em>
+              <span class="nav-title">Offers and Packages</span>
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="./review.html">
+              <em class="fa-solid fa-star-half-stroke fa-bounce"></em>
+              <span class="nav-title">Reviews</span>
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="./basket.html">
+              <em class="fa-solid fa-basket-shopping fa-bounce"></em>
+              <span class="nav-title">Basket</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+   </header>
+<!-- Body section -->
+<div class="body-first">
+    <div class="body-div1">
+        <h1 class="txt-wh">
+            Welcome to RCC
+        </h1>
+        <p class=" txt-whL">
+Welcome to Retail Camping Company (RCC), your go-to destination for all your camping equipment needs.
+Explore our wide range of high-quality products, including tents, cookers, furniture,
+and cookware, designed to enhance your outdoor adventures.
+        </p>
+        <button class="btn txt-wh" onclick="bodyClick()">Get Started</button>
+        <button class="btnV txt-wh"><em class="fa-solid fa-circle-play fa-bounce padv"></em>Watch Video</button>
+    </div>
+    <div class="body-div2">
+        <img src="./Images/tent.png" alt="img" class="bd-img"/>
+    </div>
+</div>
+<!-- Slideshow Section -->
+<div class="slider">
+  <span id="slide-1"></span>
+  <span id="slide-2"></span>
+  <span id="slide-3"></span>
+  <div class="image-container">
+    <img src="./Images/slideshow1.jpeg" class="slide" alt="img1" />
+    <img src="./Images/slide1.jpeg" class="slide"  alt="img2"  />
+    <img src="./Images/slide2.avif" class="slide"  alt="img3"  />
+  </div>
+ 
+</div>
+<div class="buttons">
+  <a href="#slide-1" aria-label="Navigate to Slide 1"></a>
+<a href="#slide-2" aria-label="Navigate to Slide 2"></a>
+<a href="#slide-3" aria-label="Navigate to Slide 3"></a>
+
+</div>
+  
+  <!-- Card Section -->
+  <div class="card-container">
+    <div class="card">
+        <img src="./Images/slide3.jpeg" alt="Card 1">
+        <h2>Card 1</h2>
+        <p>This is the content of card 1.</p>
+    </div>
+    <div class="card">
+        <img src="./Images/promotion.webp" alt="Card 2">
+        <h2>Card 2</h2>
+        <p>This is the content of card 2.</p>
+    </div>
+    <div class="card">
+        <img src="./Images/camping.jpeg" alt="Card 3">
+        <h2>Card 3</h2>
+        <p>This is the content of card 3.</p>
+    </div>
+    <div class="card">
+      <img src="./Images/slide2.avif" alt="Card 3">
+      <h2>Card 4</h2>
+      <p>This is the content of card 4.</p>
+  </div>
+  <div class="card">
+    <img src="./Images/slide3.jpeg" alt="Card 3">
+    <h2>Card 5</h2>
+    <p>This is the content of card 5.</p>
+</div>
+    <!-- Add more cards here -->
+</div>
+<div id="gdpr-cookie-message">
+  <h2>Cookies &amp; Privacy</h2>
+  <p>This website uses cookies to ensure you get the best experience on our website.</p>
+  <p><a href="/privacy/" id="gdpr-cookie-more-info">More information</a>
+    <button id="gdpr-cookie-accept" type="button" onclick=closePopup()>Accept</button>
+  </p>
+</div>
+
+<!-- footer section -->
+ <footer class="footer-body dp-body">
+    <div class="txt-wh">
+      <h1>Retail Camping Company (RCC)</h1>
+      <h2>
+            Thoughtful marketing for growing Retail camping company
+        </h2>
+            
+        
+    </div>
+    <div class="subdiv">
+        <h2 class="txt-wh">You can subscribed our channel</h2>
+        <div class="footer-email">
+          <input type="text" placeholder="Your Email" class="btnf pad-right-left" id="userEmail" aria-label="Email Address" title="Enter your email address">
+          <input type="button" value="Submit" class="btn-submit pad-right-left" onclick="submitBtn()"/>
+            <div class="btn-particles"></div>
+        </div>
+        
+    </div>
+    <div class="txtfooter txt-wh">
+      <h2>Follow us</h2>
+      <div class="">
+        <a href="https://www.facebook.com/?stype=lo&jlou=Afcr_JCdPeASQXK_Z5B-kXFMWVKqC7Z32hZrk7ObVkF2bpHrBCz" aria-label="Visit us on Facebook">
+          <em class="fa-brands fa-facebook footer-btn"></em>
+      </a>
+      
+      <a href="https://www.youtube.com/" aria-label="Watch us on YouTube">
+          <em class="fa-brands fa-youtube footer-btn"></em>
+      </a>
+      
+      <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" aria-label="Connect with us on LinkedIn">
+          <em class="fa-brands fa-linkedin footer-btn"></em>
+      </a>
+      
+       </div>
+  </div>
+ </footer>
+
+</body>
+</html>
